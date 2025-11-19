@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+
+:root {
+  --cor-click: #126ae2;
+  --cor-sombra: #0a599b;
+  --cor-text: #000000;
+  --cor-back1: #edf2f4;
+  --cor-back2: #6a937a;
+
+  --md-sys-color-primary: #126ae2;
+  --md-sys-color-on-primary: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor-back1);
+  font-family: "Arimo", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 35px;
+}
+
+#logo {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.svg_logo {
+  width: 80px;
+}
+
+.path_logo {
+  fill: var(--cor-click);
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user_name {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.font {
+  font-size: 12px;
+  color: var(--cor-text);
+}
+
+.finance-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finance-title {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+  color: var(--cor-text);
+}
+
+.finance-subtitle {
+  font-size: 12px;
+  margin: 0 0 16px 0;
+  color: #555;
+}
+
+.finance-block {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+  margin-top: 4px;
+}
+
+.finance-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.finance-block-header h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.finance-tag,
+.finance-tag-secondary {
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background-color: var(--cor-back2);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.finance-tag-secondary {
+  background-color: var(--cor-click);
+}
+
+/* Resumo de bolsas / auxílios */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.benefit-card {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f6f7fb;
+}
+
+.benefit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.benefit-header h4 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.benefit-detail {
+  margin: 2px 0;
+  font-size: 11px;
+}
+
+/* Chips de status */
+
+.status-chip {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.status-ativo {
+  background-color: #2b9348;
+}
+
+.status-atencao {
+  background-color: #f4a261;
+}
+
+/* Lista de prazos */
+
+.finance-filter {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+}
+
+.deadline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.deadline-item {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.deadline-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.deadline-title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deadline-date {
+  font-size: 11px;
+  color: var(--cor-click);
+  font-weight: 600;
+}
+
+.deadline-desc {
+  font-size: 11px;
+  margin: 2px 0 6px 0;
+}
+
+.deadline-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deadline-type {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background-color: #e0ecff;
+  color: #1d4ed8;
+}
+
+.btn-reminder {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: none;
+  background-color: #e5e5e5;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-reminder-active {
+  background-color: var(--cor-click);
+  color: #fff;
+}
+
+/* Simulação rápida */
+
+.finance-helper {
+  font-size: 11px;
+  margin: 0 0 10px 0;
+}
+
+.sim-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sim-label {
+  font-size: 11px;
+}
+
+.sim-input-row {
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+
+.sim-prefix {
+  font-size: 11px;
+  margin-right: 4px;
+  color: #6b7280;
+}
+
+#valor-mensal {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 12px;
+  background: transparent;
+}
+
+.sim-btn {
+  align-self: flex-start;
+  padding: 6px 14px;
+  font-size: 11px;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--cor-click);
+  color: #fff;
+  cursor: pointer;
+}
+
+.sim-result {
+  font-size: 11px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.sim-result-neutral {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.sim-result-ok {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.sim-result-alert {
+  background-color: #fef3c7;
+  color: #92400e;
+}
