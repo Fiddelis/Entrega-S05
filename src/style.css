@@ -42,7 +42,21 @@ header {
 }
 
 main {
-  padding: 20px;
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+@media (min-width: 600px) {
+  main {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 900px;
+  }
 }
 
 .card {
